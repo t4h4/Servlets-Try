@@ -9,4 +9,20 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+
+               <servlet-name>HelloServletApp</servlet-name> <!-- servlet ismimiz -->
+
+               <servlet-class>helloServlet.HelloServlet</servlet-class> <!-- paketAdi.SinifAdi -->
+
+  </servlet>
+
+  <servlet-mapping>
+
+               <servlet-name>HelloServletApp</servlet-name> <!-- isim ayni olmak zorunda -->
+
+               <url-pattern>/hello</url-pattern> <!-- linkleme yapimiz -->
+
+  </servlet-mapping>
 </web-app>
