@@ -9,20 +9,29 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>HelloServletApp</servlet-name>
+    <servlet-class>helloServlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServletApp</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
   
   <servlet>
-
-               <servlet-name>HelloServletApp</servlet-name> <!-- servlet ismimiz -->
-
-               <servlet-class>helloServlet.HelloServlet</servlet-class> <!-- paketAdi.SinifAdi -->
-
+  	<servlet-name>ServletConfigClass</servlet-name>
+  	<servlet-class>servletConfig.ServletConfigClass</servlet-class>
+  	<init-param>
+  		<param-name>Genclerbirligi</param-name>
+  		<param-value>Ankara 1923</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>ageOf</param-name>
+  		<param-value>Empires 2 The God King</param-value>
+  	</init-param>
   </servlet>
-
   <servlet-mapping>
-
-               <servlet-name>HelloServletApp</servlet-name> <!-- isim ayni olmak zorunda -->
-
-               <url-pattern>/hello</url-pattern> <!-- linkleme yapimiz -->
-
+  	<servlet-name>ServletConfigClass</servlet-name>
+  	<url-pattern>/ServletConfigClass</url-pattern>
   </servlet-mapping>
 </web-app>
