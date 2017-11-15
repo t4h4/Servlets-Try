@@ -9,6 +9,25 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <context-param>
+   	<param-name>website</param-name>
+   	<param-value>tahayasinerkan.com</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>email</param-name>
+  	<param-value>mail@tahayasinerkan.com</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>ServletContextClass</servlet-name>
+  	<servlet-class>servlet.context.example.ServletContextClass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletContextClass</servlet-name>
+  	<url-pattern>/ServletContextClass</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
     <servlet-name>HelloServletApp</servlet-name>
     <servlet-class>helloServlet.HelloServlet</servlet-class>
